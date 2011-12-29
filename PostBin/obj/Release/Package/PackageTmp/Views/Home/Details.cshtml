@@ -1,0 +1,32 @@
+﻿<script type="text/javascript">
+    $(document).ready(function () {
+        $(".expand").click(function () {
+            if ($(this).html() == "Expand") {
+                $(this).parent().next(".postBody").show();
+                $(this).html("Hide");
+            }
+            else {
+                $(this).parent().next(".postBody").hide();
+                $(this).html("Expand");
+            }
+        });
+    });
+</script>
+
+<div>
+    @foreach (var post in ViewBag.Posts)
+    {
+        <div class="post">
+            <div class="postHeader">Receved On: @post.ReceivedOn <a href="#" class="expand">Expand</a></div>
+                <div class="postBody">
+                @foreach (var header in post.Headers)
+                {
+                        <div class="headerField">@header.Name=@header.Value<br /></div>
+                }
+                <div>Body</div>            
+                <div>@post.Data</div>
+                <br /><br />
+            </div>
+        </div>
+    }
+</div>

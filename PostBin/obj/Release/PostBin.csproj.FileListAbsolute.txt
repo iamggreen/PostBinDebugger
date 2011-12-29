@@ -1,0 +1,8 @@
+C:\Users\Amy\documents\visual studio 2010\Projects\PostBin\PostBin\bin\PostBin.dll
+C:\Users\Amy\documents\visual studio 2010\Projects\PostBin\PostBin\bin\PostBin.pdb
+C:\Users\Amy\documents\visual studio 2010\Projects\PostBin\PostBin\bin\EntityFramework.dll
+C:\Users\Amy\documents\visual studio 2010\Projects\PostBin\PostBin\bin\mysql.data.dll
+C:\Users\Amy\documents\visual studio 2010\Projects\PostBin\PostBin\bin\EntityFramework.xml
+C:\Users\Amy\documents\visual studio 2010\Projects\PostBin\PostBin\obj\Release\ResolveAssemblyReference.cache
+C:\Users\Amy\documents\visual studio 2010\Projects\PostBin\PostBin\obj\Release\PostBin.dll
+C:\Users\Amy\documents\visual studio 2010\Projects\PostBin\PostBin\obj\Release\PostBin.pdb

@@ -1,0 +1,42 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Index</title>
+    <script src="../../Scripts/jquery-1.5.1.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("input[name='id']").focus();
+        });
+    </script>
+    <link href="../../Content/Site.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <div>
+        <div>@ViewBag.Message</div>
+        <h2>Bins</h2>
+        <ul>
+            @foreach (var bin in ViewBag.Bins)
+            {
+            <li>@Html.ActionLink((string)bin.Name, "Details", new { id = bin.Name })</li>
+            }
+        </ul>
+
+        <fieldset>
+            <legend>Test Post</legend>
+            @using (Html.BeginRouteForm(new { action = "Post"}))
+            {
+                <text>Bin Name: </text><input type="text" id="id" name="id" />
+                <br />
+                <textarea rows="10" cols="80" id="testPostText" name="testPostText"></textarea>
+                <br />
+                <input type="submit" id="testPostButton" name="testPostButton" value="Submit Test Post" />                
+            }
+        </fieldset>
+    </div>
+</body>
+</html>
